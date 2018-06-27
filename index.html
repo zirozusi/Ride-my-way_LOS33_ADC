@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-with">
+    <meta name="description" content="Affordable rides">
+    <meta name="keyword" content="affordable rides, rides, cars services, taxi cab, ride sharing, uber-resque transportation network">
+    <meta name="author" content="Ziro Zenoma Zusi">
+    <title>Ride My Way | Welcome</title>
+    <link rel="stylesheet" type="text/css" href="./css/recss2.css">
+    
+    </head>
+  </head>
+  <body>
+    <header class="caption">
+      <div class="container">
+        <div id="branding">
+          <h1><span>Ride</span> My Way</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="rides.html">Rides</a></li>
+            <li><a href="requests.html">Requests</a></li>
+            <li><a href="profile.html">Profile</a></li>        
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="clear">
+      <div class="view">
+        <section class="pitch col">
+          <article id="msg">
+            <div id="showcase">
+              <h1 class="title">Affordable ride your way, anytime.</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac risus congue, ultricies nunc non, facilisis lectus. Phasellus mollis, libero eu imperdiet scelerisque, urna tortor blandit purus, varius fermentum felis dui quis nibh. Curabitur sagittis, dui dignissim viverra imperdiet, urna ex mattis neque, id sagittis mi ex nec ligula. Morbi porttitor mauris dignissim purus tristique tempor. 
+              </p>
+            </div>
+          </article>
+        </section>
+        <section class="access col">
+          <div class="form">
+            <div class="head signup">
+              <div onclick="swap(this);" id="login" class="login-tab" >
+                LOGIN
+              </div>
+              <div onclick="swap(this);" id="signup" class="signup-tab">
+                SIGNUP
+              </div>
+            </div>
+            <div class="body" id="form-body">
+                <div class="login" id="login_div">
+                  <div  class="form-row">
+                    <div id="alert"></div>
+                    <form name="login_form" onsubmit="return validateLogin()">
+                    <input type="text" name="email" placeholder="Enter your email" autocomplete="off">
+                    <input type="password" name="password" placeholder="Enter your password" autocomplete="off">
+                    <input type="submit" value="Login">
+                  </form>
+                  </div>
+                  
+                  
+                </div>
+                <div class="signup" id="signup_div">
+                  <div class="form-row" id="pin">
+                    <form class="form-row" name="signup_form" onsubmit="return validateSignup()">
+                      <label id="emailLabel"></label><br>
+                      <input type="text" placeholder="Enter your email" name="email" autocomplete="off">
+                      <label id="passwordLabel"></label><br>
+                      <input type="password" id="password" placeholder="Enter your password" name="password" autocomplete="off">
+                      <label id="pwdRetryLabel"></label><br>
+                      <input type="password" placeholder="Confirm password (re-enter)" name="pwdRetry" autocomplete="off">
+                      <div id="pwdStrength"></div>
+                      <input type="submit" name="btn" value="Sign Up">
+                    </form>
+                </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <p>Ride My Way, Copyright &copy; 2018</p>
+    </footer>
+    <script src="./js/rmw.js"></script>
+  </body>
+</html>
+
